@@ -1,0 +1,10 @@
+%This warping function is from a utility function used in 
+%Ce Liu's Optical Flow package from:
+%https://people.csail.mit.edu/celiu/OpticalFlow/
+function [warpI2,I]=warpFL(i2,vx,vy)
+% warp i1 according to flow field in vx vy
+[M,N]=size(i2);
+[x,y]=meshgrid(1:N,1:M);
+warpI2=interp2(x,y,i2,x+vx,y+vy,'bicubic');
+%warpI2=interp2(x,y,i2,x+vx,y+vy);
+I=find(isnan(warpI2));
