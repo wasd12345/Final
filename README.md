@@ -1,11 +1,11 @@
 # Final
 Final Project for CS231A
 
-My MATLAB code:\n
-MAIN - main code\n
-EdgesNCC\n
-GetWarpMatrix\n
-TestGetWarpMatrix - not actually called in MAIN, but demonstrates that Bilinear Interpolation Matrix code is working as intended\n
+My MATLAB code:
+MAIN - main code
+EdgesNCC
+GetWarpMatrix
+TestGetWarpMatrix - not actually called in MAIN, but demonstrates that Bilinear Interpolation Matrix code is working as intended
 IRLS
 Homography2D
 RANSAC_Homography2D
